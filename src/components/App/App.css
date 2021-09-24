@@ -2,10 +2,16 @@
   text-align: center;
 }
 
-/*.App-logo {*/
-/*  height: 40vmin;*/
-/*  pointer-events: none;*/
-/*}*/
+.header {
+  display: flex;
+  align-items: flex-start;
+}
+
+.logo {
+  color: darkcyan;
+  font-size: 25px;
+  font-weight: bold;
+}
 
 /*@media (prefers-reduced-motion: no-preference) {*/
 /*  .App-logo {*/

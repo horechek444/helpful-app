@@ -1,13 +1,14 @@
 import './App.css';
+import Clothes from "../Clothes/Clothes";
 
 const App = () => {
   return (
     <div className="app">
       <header className="header">
-        <span>Helpful-app</span>
+        <span className="logo">Helpful-app</span>
       </header>
       <main className="main">
-
+        <Clothes />
       </main>
       <footer className="footer">
 
