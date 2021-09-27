@@ -1,12 +1,11 @@
 import './App.css';
 import Clothes from "../Clothes/Clothes";
+import Header from "../Header/Header";
 
 const App = () => {
   return (
     <div className="app">
-      <header className="header">
-        <span className="logo">Helpful-app</span>
-      </header>
+      <Header />
       <main className="main">
         <Clothes />
       </main>
