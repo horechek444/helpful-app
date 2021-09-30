@@ -1,11 +1,12 @@
 import React from "react";
+import ListItem from "../ListItem/ListItem";
 
-const Garment = ({isGarmentShow, objects, key}) => {
+const Garment = ({values}) => {
   return (
-    <ul className={isGarmentShow ? "garment garment_active" : "garment"}>
-      {/*{objects[key].map((value) => (*/}
-      {/*  <li className="garment__item" key={`${value}`}>{value}</li>*/}
-      {/*))}*/}
+    <ul className={"garment"}>
+      {values.map((value) => (
+        <ListItem className={"garment__item"} key={value.toString()} value={value} />
+      ))}
     </ul>
   );
 };
