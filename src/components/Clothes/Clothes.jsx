@@ -1,24 +1,21 @@
 import React, {useState} from "react";
 import "./Clothes.css";
-import categories from "../../data";
 import ListItem from "../ListItem/ListItem";
 import Garment from "../Garment/Garment";
 
-const Clothes = () => {
+const Clothes = ({keys, values}) => {
   const [showChild, setShowChild] = useState(null);
-  const [keys, setKeys] = useState(Array.from(categories.keys()));
-  const [values, setValues] = useState(Array.from(categories.values()));
 
-  const handleClick = (index) => {
-    setShowChild(index);
-  }
+  const handleClick = (event) => {
+    setShowChild(Number(event.target.id));
+  };
 
   return (
-    <ul className="category">
+    <ul className="category list" onClick={handleClick}>
       {keys.map((key, index) => (
-        <ListItem className={"category__item"}
+        <ListItem className={"category__item list__item"}
                   key={key.toString()}
-                  onClick={() => handleClick(index)}
+                  id={index}
                   value={key}
                   children={showChild === index ? <Garment values={values[index]} /> : null}
         />

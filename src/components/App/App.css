@@ -1,5 +1,14 @@
 .app {
-  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  font-weight: 400;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
 }
 
 .header {
@@ -13,6 +22,15 @@
   font-weight: bold;
 }
 
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list__item {
+  cursor: pointer;
+}
 /*@media (prefers-reduced-motion: no-preference) {*/
 /*  .App-logo {*/
 /*    animation: App-logo-spin infinite 20s linear;*/
