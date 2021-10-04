@@ -1,8 +1,9 @@
 .app {
+  display: flex;
+  margin: 0;
   font-family: Arial, sans-serif;
   background-color: #ffffff;
   font-weight: 400;
-  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -11,15 +12,18 @@
   text-rendering: optimizeLegibility;
 }
 
-.header {
-  display: flex;
-  align-items: flex-start;
+.wrapper {
+  display: grid;
+  grid-auto-columns: 1280px;
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+  box-sizing: border-box;
 }
 
-.logo {
-  color: darkcyan;
-  font-size: 25px;
-  font-weight: bold;
+.main {
+  min-width: 100%;
+  padding: 15px;
 }
 
 .list {

@@ -1,5 +1,18 @@
-.category__item {
+.clothes__list {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.clothes__item {
   display: block;
   color: darkseagreen;
   margin-top: 15px;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.garment__item {
+  margin-top: 4px;
+  color: black;
+  padding-left: 5px;
 }

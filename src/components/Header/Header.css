@@ -1,11 +1,7 @@
 .header {
   display: flex;
-  justify-content: center;
-}
-
-.wrapper {
-  display: flex;
   justify-content: flex-start;
-  min-width: 1280px;
+  min-width: 100%;
   padding: 15px;
+  box-sizing: border-box;
 }

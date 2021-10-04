@@ -1,12 +1,11 @@
 import React from "react";
 import "./Header.css";
+import Logo from "../Logo/Logo";
 
 const Header = () => {
   return (
     <header className="header">
-      <div className="wrapper">
-        <span className="logo">Helpful-app</span>
-      </div>
+      <Logo />
     </header>
   );
 };
